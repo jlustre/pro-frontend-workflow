@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="eng" ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Itunes Apps Example</title>
+
+    	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+				
+		<!-- <script src="lib/jquery/jquery-2.1.1.min.js"></script> -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--[if IE]>
+		<script src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+		<![endif]-->
+
+		<script src="lib/angular/angular.min.js"></script>
+		<!-- <script src="lib/bootstrap/bootstrap.min.js"></script> -->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-resource.js"></script>
+		
+		<script src="js/app.js"></script>
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div ng-controller="AppsController">
+				<center><h3 id="apptitle">{{author.name.label + ' Top Paid Apps'}}</h3></center>
+				<canvas id="exampleCanvas" my-grapgh data="graph">
+
+				  <!-- OPTION 1: leave a message here if browser doesn't support canvas -->
+				    <p>Your browser doesn’t currently support HTML5 Canvas.
+				    Please check caniuse.com/#feat=canvas for information on
+				    browser support for canvas.</p>
+				 
+				</canvas>
+
+				<div id="dimension" ng-hide="1"></div>
+				
+				<div id="listing">
+					<div id="filterrow" class=row>
+					    <div class="col-xs-5" id="search">
+					      <input style="width: 120px;" ng-model="query" placeholder="Search for Apps" autofocus> 
+					    </div>
+						<div class="col-xs-6" id="sortby">Sort by:
+				        	<select style="width: 90px;" ng-model="sortOrder">
+							  <option value="name">Name</option>
+							  <option value="price">Price</option>
+							  <option value="releaseDate">Date</option>
+							</select>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					
+					<div class="clearfix"></div>
+
+					<div ng-repeat="app in newlist|filter:filterData|orderBy:sortOrder" class="appItem">
+						<div class="col-sm-6 col-xs-12">
+	                       <div class="thumbnail">
+	                       		<div>
+		                       		<div class="col-xs-3"><img  class="img-responsive" style="margin-top: 10px;" ng-src="{{app.imgsrc1}}" height="{{app.imgheight1}}"/></div>							
+									<div class="col-xs-9">
+										<h4>{{app.name}}</h4>
+										<p>{{app.category}}<br>				
+										   {{app.price}}</p>
+										  <span ng-hide="true">ReleaseDate = {{app.releaseDate}}</span>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div> <!--//ng-repeat -->
+
+				</div> <!-- //listing -->
+			</div> <!-- //ng-controller -->
+		</div> <!-- //container -->
+	</body>
+</html>
