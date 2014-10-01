@@ -1,0 +1,261 @@
+* {	padding: 0; margin: 0; vertical-align: top; }
+
+body {
+	
+	font: 18px/1.5em "proxima-nova", Helvetica, Arial, sans-serif;
+}
+
+a {	color: #069; }
+a:hover { color: #28b; }
+
+h2 {
+	margin-top: 15px;
+	font: normal 32px "omnes-pro", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+	font: normal 26px "omnes-pro", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+h4 
+{
+	font: normal 20px "omnes-pro", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+p {
+	margin-top: 10px;
+}
+
+button {
+	font-size: 18px;
+	padding: 1px 7px;
+}
+
+input {
+	font-size: 18px;
+}
+
+input[type=checkbox] {
+	margin: 7px;
+}
+
+#header {
+	position: relative;
+	width: 900px;
+	margin: auto;
+}
+
+#header h2 {
+	margin-left: 10px;
+	vertical-align: middle;
+	font-size: 42px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+
+#content {
+	width:1100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#footer {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+
+.charts-container {
+	box-sizing: border-box;
+	width:100%;
+	height:1036px;
+	padding: 20px 15px 15px 15px;
+	margin: 15px auto 30px auto;
+	border: 1px solid #ddd;
+	background: #fff;
+	background: linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	position: relative;
+}
+
+.loader {
+box-sizing: border-box;
+width:1000px;
+height:1074px;
+padding: 20px 15px 15px 15px;
+margin-top:0px;
+border: 1px solid #ddd;
+	background: #fff;
+	background: linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -o-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -ms-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -moz-linear-gradient(#f6f6f6 0, #fff 50px);
+	background: -webkit-linear-gradient(#f6f6f6 0, #fff 50px);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+	-o-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	position: absolute;
+	z-index: 100;
+}
+.loader img {
+    display: inline-block;
+    margin-top:259px;
+}
+.charts-placeholder {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 1.2em;
+}
+
+.legend table {
+	border-spacing: 5px;
+}
+.time-log-table
+{
+display: inline-block;
+width:470px;
+background-color:#D8D8D8;
+margin-top:7px;
+}
+.time-log-table  thead
+{
+background-color:#A4A4A4;	
+}
+#header {
+position: relative;
+width:1000px;
+height:39px;
+margin: 0px;
+background-color: floralwhite;
+border: 1px solid gray;
+}
+.selectSection
+{
+margin-left: 5px;
+margin-top: 5px;
+display: inline-block;
+width: 20px;
+height: 20px;
+}
+.container
+{
+width:1000px;
+height:1074px;
+background-color: floralwhite;
+margin-top: 15px;
+border: 1px solid gray;
+}
+.plot-results
+{
+width: 863px;
+height: 572px;
+margin-top: 15px;
+margin-left: 15px;
+background-color: floralwhite;
+border: 1px solid gray;
+}
+.showResults
+{
+margin-top: 10px;
+margin-left: 33px;
+}
+.time-log-table-container
+{
+width: 1000px;
+height: 200px;
+margin-top: 19px;
+font-size: 12px;
+}
+#lineChartPlaceholder
+{
+display:inline-block;
+width:48%;
+height:315px;
+}
+#areaChartPlaceholder
+{
+display:inline-block;
+width:48%;
+height:305px;	
+}
+#barChartPlaceholder
+{
+display:inline-block;
+width:48%;
+height:305px;
+}
+.area-chart-text
+{
+margin-left:411px;	
+}
+.bar-chart-text
+{
+margin-top:15px;		
+}
+.dropdown-text
+{
+width: 140px;
+font: normal 17px "omnes-pro", Helvetica, Arial, sans-serif;
+color: #000;
+display: inline-block;
+margin-top: 5px;
+}
+.performance-parameters
+{
+	margin-left: 375px;
+}
+.selectBox
+{
+	font: normal 17px "omnes-pro", Helvetica, Arial, sans-serif;
+}
+.avgLoadingTime
+{
+color: blue;
+text-decoration: underline;
+cursor: pointer;	
+}
+.nt-hidden
+{
+visibility:hidden;	
+}
+.dialog
+{
+font:normal 17px "omnes-pro", Helvetica, Arial, sans-serif;
+}
+.ui-dialog
+{
+width:330px;	
+}
+.popup-table
+{
+width:268px;
+background-color:#D8D8D8;	
+}
+.popup-table thead
+{
+background-color: #a4a4a4;
+}
+.popup-chart-type,.popup-datapoints
+{
+display:inline-block;
+font:normal 20px "omnes-pro", Helvetica, Arial, sans-serif;
+}
+.ui-dialog-title
+{
+font: normal 20px "omnes-pro", Helvetica, Arial, sans-serif;
+color: #000;	
+}

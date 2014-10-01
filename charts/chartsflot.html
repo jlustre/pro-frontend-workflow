@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="ISO-8859-1" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+<title>NT Chart PoC</title>
+<link href="css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+<link href="css/charts.css" rel="stylesheet">
+</head>
+<body>
+	<div id="content">
+	<!--  drop down to select the data points -->
+		<header id="header">
+			<div class="dropdown-text">No. of data points: </div>
+			<section class="selectSection">
+				<select class="selectBox" data-role="none">
+					<option selected="selected" value="data_1000">1000 data
+						points</option>
+					<option value="data_2500">2500 data points</option>
+					<option value="data_5000">5000 data points</option>
+					<option value="data_7500">7500 data points</option>
+					<option value="data_10000">10000 data points</option>
+					
+				</select>
+			</section>
+		</header>
+
+		<section class="container">
+		<!-- Loader images -->
+			
+	<!-- 	<div class="loader" style="text-align: center;">
+				<img src="../images/loading_1.gif">
+			</div>     -->	
+			<div class="charts-container">
+		<!-- Line chart section starts-->
+				<h4>Line Chart <span class="performance-parameters">Performance Parameters (ms)</span></h4>
+				<div id="lineChartPlaceholder" class="charts-placeholder"></div>
+				<!-- Line chart performance table starts-->
+				<table border="1" align="center" class="time-log-table line-chart-table">
+					<thead>
+						<th>Data Points</th>
+						<td>Fetching Time</td>
+						<td>Processing Time</td>
+						<td>Plotting Time</td>
+						<td>Total Loading Time</td>
+						<td>Average Loading Time</td>
+					</thead>
+					<tbody class="data-1000-table">
+						<th>1000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-2500-table">
+						<th>2500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-5000-table">
+						<th>5000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-7500-table">
+						<th>7500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-10000-table">
+						<th>10000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+				</table>
+					<!-- Line chart performance table ends-->
+				<!-- Line chart section ends-->
+				
+				
+				
+				<!-- Area chart section starts-->
+				<h4>Area Chart<span class="performance-parameters">Performance Parameters (ms)</span></h4>
+				<div id="areaChartPlaceholder" class="charts-placeholder"></div>
+					<!-- Area chart performance table starts-->
+				<table border="1" align="center" class="time-log-table area-chart-table">
+					<thead>
+						<th>Data Points</th>
+						<td>Fetching Time</td>
+						<td>Processing Time</td>
+						<td>Plotting Time</td>
+						<td>Total Loading Time</td>
+						<td>Average Loading Time</td>
+					</thead>
+					<tbody class="data-1000-table">
+						<th>1000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-2500-table">
+						<th>2500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-5000-table">
+						<th>5000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-7500-table">
+						<th>7500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-10000-table">
+						<th>10000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+				</table>
+					<!-- Area chart performance table ends-->
+				<!-- Area chart section ends-->
+				
+				
+				<!-- Bar chart section starts-->		
+				<h4>Bar Chart <span class="performance-parameters">Performance Parameters (ms)</span></h4>
+				<div id="barChartPlaceholder" class="charts-placeholder"></div>
+				<!-- Bar chart performance table starts-->
+				<table border="1" align="center" class="time-log-table bar-chart-table">
+					<thead>
+						<th>Data Points</th>
+						<td>Fetching Time</td>
+						<td>Processing Time</td>
+						<td>Plotting Time</td>
+						<td>Total Loading Time</td>
+						<td>Average Loading Time</td>
+					</thead>
+					<tbody class="data-1000-table">
+						<th>1000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-2500-table">
+						<th>2500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-5000-table">
+						<th>5000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+					<tbody class="data-7500-table">
+						<th>7500</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					<tbody class="data-10000-table">
+						<th>10000</th>
+						<td class="fetchTime"></td>
+						<td class="processTime"></td>
+						<td class="plotTime"></td>
+						<td class="totalLoadingTime"></td>
+						<td class="avgLoadingTime"></td>
+					</tbody>
+				</table>
+				<!-- Bar chart performance table ends-->
+				<!-- Bar chart section ends-->	
+			</div>
+
+		</section>
+
+
+	</div>
+
+<div id="dialog" title="Log History" class="# dialog nt-hidden">
+	<div class="popup-chart-type"></div>
+	<div class="popup-datapoints"></div>
+  <table border="1" class="popup-table">
+  		<thead>
+  		<tr>
+			<th class="iteration-text">Iteration</th>
+			<th class="popup-plotting-time">Plotting Time</th>
+			</tr>
+		</thead>
+		<tbody id="popup-tbody">
+			
+		</tbody>	
+  </table>
+</div>
+<table class="clone-table">
+<tr id="popup-tr" style="visibility:hidden;">
+	<td id="popup-td1" class="popup-td1"></td>
+	<td id="popup-td2" class="popup-td2"></td>
+</tr>
+</table>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/jquery-ui-1.10.4.custom.js"></script>
+	<script src="js/lib/jquery.flot.js"></script>
+	<script src="js/lib/jquery.flot.time.js"></script>
+	<script src="js/lib/jquery.flot.tooltip.js"></script>
+	<script src="js/lib/jquery.flot.labels.js"></script>
+	<script src="js/lib/jquery.flot.navigate.js"></script>
+	<script src="js/app/charts_flot.js"></script>
+	<script src="js/app/template.js"></script>
+	
+</body>
+</html>
