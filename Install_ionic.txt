@@ -1,0 +1,15 @@
+	1. Install Chrome Canary
+	2. Install Java Development kit, Apache Ant and Android
+		a. See http://ionicframework.com/docs/guide/installation.html
+	3. Download and install nodejs.
+	4. Install ionic
+	 npm install ionic -g
+	5. Install cordova
+	npm install cordova -g
+	6. ionic start firstIonicApp blank
+	7. Go to the root directory then type:
+	ionic serve
+	8. Install android platform
+		a. ionic platform add android
+		b. Ionic build android
+		c. Ionic emulate android
